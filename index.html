@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <base href="./Index.html">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="quote fs-1 text-black" style="margin: auto;text-align: center;">
+        <h1 class="display-1 fw-bolder pt-5" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            Quote of the Day</h1>
+        <p>Press the button below to recieve a random quote!</p>
+        <button onclick="getQuote();" class="btn btn-outline-dark fs-5 fw-semibold">New Quota</button>
+        <input type="hidden" id="_lastQ" value="">
+        <div class="container m-auto text-white p-3" >
+            <p id="Q" class="fw-semibold fs-3"></p>
+            <p id="autherQ" class="fw-light fs-4 text-light"></p>
+        </div>
+    </section>
+    <!-- main js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
